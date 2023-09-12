@@ -259,6 +259,7 @@ function gameLoop(currentTime) {
     // Game over screen
     if (gameOver) {
         clearInterval(refreshIntervalId);
+        score.setHighScore();
         score.score = 0;
         showGameOver();
     }
